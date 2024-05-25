@@ -2,7 +2,22 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
+      <entry key="SecondaryActivityTest">
+        <State />
+      </entry>
       <entry key="app">
+        <State />
+      </entry>
+      <entry key="test_backPressToMainActivity()">
+        <State />
+      </entry>
+      <entry key="test_isActivityInView()">
+        <State />
+      </entry>
+      <entry key="test_isTitleTextDisplayed()">
+        <State />
+      </entry>
+      <entry key="test_navSecondaryActivity()">
         <State />
       </entry>
     </value>

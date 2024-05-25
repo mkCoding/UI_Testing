@@ -33,6 +33,9 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -42,12 +45,17 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
     testImplementation(libs.junit)
+    testImplementation("junit:junit:4.12")
     androidTestImplementation(libs.androidx.junit)
 
-    //Espresso libs added for UI testing
-    androidTestImplementation(libs.androidx.espresso.core)
-    androidTestImplementation("androidx.test:runner:1.4.0")
-    androidTestImplementation("androidx.test:rules:1.4.0")
+    //Espresso dependencies required specifically for UI testing
+    androidTestImplementation(libs.androidx.espresso.core) //required
+    androidTestImplementation(libs.androidx.runner) //required
+    androidTestImplementation(libs.androidx.rules) //required
+    androidTestImplementation(libs.junit.ktx) //required
+
 
 }
